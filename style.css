@@ -1,0 +1,51 @@
+body{
+  font-family:Inter;
+  margin:0;
+  background:#f5f7fb;
+  padding:16px;
+}
+.banner{
+  background:#e0f7fa;
+  padding:12px;
+  border-radius:12px;
+  font-weight:600;
+}
+.stats{
+  display:flex;
+  gap:12px;
+  margin:16px 0;
+}
+.card{
+  flex:1;
+  background:#fff;
+  padding:16px;
+  border-radius:16px;
+  text-align:center;
+}
+.progress{
+  height:10px;
+  background:#ddd;
+  border-radius:10px;
+  overflow:hidden;
+}
+#bar{
+  height:100%;
+  width:0%;
+  background:#4caf50;
+}
+.task{
+  background:#fff;
+  border-radius:14px;
+  padding:14px;
+  margin:10px 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+button{
+  background:#22c55e;
+  border:none;
+  color:#fff;
+  padding:8px 14px;
+  border-radius:12px;
+}
