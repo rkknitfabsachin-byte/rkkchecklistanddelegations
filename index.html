@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Tasks</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <header class="topbar">
-    <div class="logo">Task Desk</div>
-    <div class="user" id="userEmail"></div>
-  </header>
+<header class="topbar">
+  <div class="logo">Task Desk</div>
+  <div class="user" id="userEmail"></div>
+</header>
 
-  <main class="container">
+<main class="container">
 
-    <section id="status" class="status hidden"></section>
+  <!-- MOTIVATION -->
+  <section class="motivation" id="motivation">
+    💪 Aaj ka kaam aaj niptao, kal ka stress kal dekhenge.
+  </section>
 
-    <section class="section">
-      <h2>Missed / Today</h2>
-      <div id="taskList" class="task-list"></div>
-    </section>
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat">
+      <div class="stat-value" id="todayDone">0</div>
+      <div class="stat-label">Today Done</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value" id="weekDone">0</div>
+      <div class="stat-label">This Week</div>
+    </div>
+    <div class="stat wide">
+      <div class="stat-label">Completion Rate</div>
+      <div class="progress">
+        <div class="progress-fill" id="completionBar"></div>
+      </div>
+      <div class="progress-text" id="completionText">0%</div>
+    </div>
+  </section>
 
-    <section class="section">
-      <h2>Upcoming (Checklist)</h2>
-      <input type="date" id="datePicker"/>
-      <div id="upcomingList" class="task-list"></div>
-    </section>
+  <!-- TASKS -->
+  <section class="section">
+    <h2>Pending Tasks</h2>
+    <div id="taskList" class="task-list"></div>
+  </section>
 
-  </main>
+</main>
 
-  <script src="app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
