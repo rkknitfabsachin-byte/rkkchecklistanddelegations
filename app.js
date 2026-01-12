@@ -1,4 +1,4 @@
-const API_BASE = "https://checklist-art-f8d8.rkknitfabsachin.workers.dev/";
+const API_BASE = "https://checklist-art-f8d8.rkknitfabsachin.workers.dev";
 
 function getToken() {
   const url = new URL(window.location.href);
