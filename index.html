@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Tasks</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo">Task Desk</div>
+    <div class="user" id="userEmail"></div>
+  </header>
+
+  <main class="container">
+
+    <section id="status" class="status hidden"></section>
+
+    <section class="section">
+      <h2>Missed / Today</h2>
+      <div id="taskList" class="task-list"></div>
+    </section>
+
+    <section class="section">
+      <h2>Upcoming (Checklist)</h2>
+      <input type="date" id="datePicker"/>
+      <div id="upcomingList" class="task-list"></div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
