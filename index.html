@@ -1,53 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Tasks</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Tasks</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="topbar">
-  <div class="logo">Task Desk</div>
-  <div class="user" id="userEmail"></div>
-</header>
+<div class="banner">🔥 Aaj ka kaam aaj niptao, kal ka stress kal dekhenge.</div>
 
-<main class="container">
+<div class="stats">
+  <div class="card"><h2 id="todayDone">0</h2><p>Today Done</p></div>
+  <div class="card"><h2 id="weekDone">0</h2><p>This Week</p></div>
+</div>
 
-  <!-- MOTIVATION -->
-  <section class="motivation" id="motivation">
-    💪 Aaj ka kaam aaj niptao, kal ka stress kal dekhenge.
-  </section>
+<div class="progress">
+  <div id="bar"></div>
+</div>
 
-  <!-- STATS -->
-  <section class="stats">
-    <div class="stat">
-      <div class="stat-value" id="todayDone">0</div>
-      <div class="stat-label">Today Done</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value" id="weekDone">0</div>
-      <div class="stat-label">This Week</div>
-    </div>
-    <div class="stat wide">
-      <div class="stat-label">Completion Rate</div>
-      <div class="progress">
-        <div class="progress-fill" id="completionBar"></div>
-      </div>
-      <div class="progress-text" id="completionText">0%</div>
-    </div>
-  </section>
+<h3>Pending Tasks</h3>
+<div id="tasks"></div>
 
-  <!-- TASKS -->
-  <section class="section">
-    <h2>Pending Tasks</h2>
-    <div id="taskList" class="task-list"></div>
-  </section>
-
-</main>
+<h3>Upcoming</h3>
+<input type="date" id="datePicker">
+<div id="upcoming"></div>
 
 <script src="app.js"></script>
 </body>
